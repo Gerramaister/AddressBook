@@ -36,13 +36,27 @@ public class AddressBook {
 			
 			
 			if(name.equals(person.getName())) {
-				System.out.println(person.getName());
+				System.out.println(person.getName() +" " + person.getAddress()+ " " + person.getPhoneNumber());
 				
+			}
+			else {
+				System.out.println("There is no person with that name");
 			}
 		}	
 	}
-	public void deletePerson() {
+	public void deletePerson(String name) {
 		
+		for(PersonInfo person: persons) {
+			
+			
+			if(name.equals(person.getName())) {
+				System.out.println(person.getName() +" has now been deleted");
+				persons.remove(person);
+			}
+			else {
+				System.out.println("Can't delete a person that does not exist!");
+			}
+		}
 	}
 	
 	public void savePersons() {
