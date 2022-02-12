@@ -33,4 +33,11 @@ public class PersonInfo {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
+
+	@Override
+	public String toString() {
+		return "PersonInfo [name=" + name + ", address=" + address + ", phoneNumber=" + phoneNumber + " \n]";
+	}
+	
+	
 }
