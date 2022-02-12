@@ -2,24 +2,37 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class AddressBook {
 	
-	private List<PersonInfo> addressbook;
+	private ArrayList<PersonInfo> persons;
+	private Scanner scanner;
 
-	public AddressBook(List<PersonInfo> addressbook) {
-		this.addressbook = addressbook;
+	public AddressBook() {
+		scanner = new Scanner(System.in);
+		persons = new ArrayList<PersonInfo>();
 	}
 	
-	public void addPerson(PersonInfo person) {
+	public void addPerson() {
 	
+		System.out.println("Enter name: ");
+		String name = scanner.nextLine();
+		
+		System.out.println("Enter address: ");
+		String address = scanner.nextLine();
+		
+		System.out.println("Enter phonenumber: ");
+		String phonenumber = scanner.nextLine();
+		
+		PersonInfo person = new PersonInfo(name, address, phonenumber);
+		persons.add(person);
 	}
-	public PersonInfo createPerson(Scanner scanner, List<PersonInfo> addressbook) {
-		PersonInfo person = new PersonInfo(scanner.nextLine(), scanner.nextLine(), scanner.nextLine());
-		this.addressbook.add(person);
-		return person;
+	public void searchPerson() {
+		
+	}
+	public void deletePerson() {
+		
 	}
 	
 	public void savePersons() {
