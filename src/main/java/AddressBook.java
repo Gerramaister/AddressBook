@@ -49,12 +49,12 @@ public class AddressBook {
 		try {
 			PersonInfo p;
 			String line;
-			FileWriter fw = new FileWriter("persons.txt");
+			FileWriter fw = new FileWriter("SaveContacts.txt");
 			PrintWriter pw = new PrintWriter(fw);
 			for(int i = 0; i < persons.size(); i++) {
 				p = (PersonInfo) persons.get(i);
 				line = p.getName() + "," + p.getAddress() + p.getPhoneNumber();
-				//Write line to persons.txt
+				//Write line to SaveContacts.txt
 				pw.println(line);
 			}
 			pw.flush();
