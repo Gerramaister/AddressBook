@@ -28,8 +28,18 @@ public class AddressBook {
 		PersonInfo person = new PersonInfo(name, address, phonenumber);
 		persons.add(person);
 	}
-	public void searchPerson() {
+	
+	
+	public void searchPerson(String name) {
 		
+		for(PersonInfo person: persons) {
+			
+			
+			if(name.equals(person.getName())) {
+				System.out.println(person.getName());
+				
+			}
+		}	
 	}
 	public void deletePerson() {
 		
