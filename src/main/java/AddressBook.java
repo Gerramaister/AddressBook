@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class AddressBook {
 	
-	private ArrayList<PersonInfo> persons;
+	ArrayList<PersonInfo> persons;
 	private Scanner scanner;
 
 	public AddressBook() {
@@ -106,6 +106,10 @@ public class AddressBook {
 		}catch(IOException ioEx) {
 			System.out.println(ioEx);
 		}
+	}
+
+	public ArrayList<PersonInfo> getPersons() {
+		return persons;
 	}
 	
 	
