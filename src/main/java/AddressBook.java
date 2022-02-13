@@ -83,7 +83,7 @@ public class AddressBook {
 		}
 		
 	}
-	//load contacts saved in "SaveContacts.txt"
+	//load contacts to program saved in "SaveContacts.txt"
 	public void loadPersons() {
 		String tokens[] = null;
 		String name, add, pn;
