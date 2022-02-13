@@ -1,2 +1,3 @@
-Oskar Johansson,  Västra Andersgårdsgatan 13c,  0707252565
-Kalle Anka, Ankeborg 54, 112
+Oskar Johansson,   Västra Andersgårdsgatan 13c,   0707252565
+Kalle Anka,  Ankeborg 54,  112
+Jonathan, Drottningsgatan 69, 0723234896
