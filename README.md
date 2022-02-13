@@ -7,8 +7,9 @@ The functions which are available are as follows: You are able to add new contac
 Everytime you start the program the contacts saved in the .txt file will be loaded in to the program.
 
 To run the programs you need JDK 11.0 installed.
-Navigate to where you downloaded the folder "AddressBook".
-open cmd or powershell.
+Open cmd or powershell.
+Navigate to where you downloaded the folder in "AddressBook".
+go to directory \src\main\java\ with cd \src\main\java\.
 Type: Javac App.java and press enter.
 Type: Java App and press enter.
 The Addressbook should now start.
