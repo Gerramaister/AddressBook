@@ -1,3 +1,4 @@
+package se.yrgo.addressbook;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

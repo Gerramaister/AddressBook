@@ -1,3 +1,4 @@
+package se.yrgo.addressbook;
 
 public class PersonInfo {
 	private String name;
