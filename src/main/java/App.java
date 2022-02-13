@@ -15,7 +15,8 @@ public class App {
 				System.out.println("Enter any of the following numbers: \n" + "1 - Add \n" + "2 - Search \n"
 						+ "3 - Delete \n" + "4 - Save & Exit \n");
 				choice = scanner.nextInt();
-
+				scanner.nextLine();
+				
 				if (choice >= 1 && choice <= 4) {
 					switch (choice) {
 					case 1:
@@ -23,13 +24,11 @@ public class App {
 						break;
 					case 2:
 						System.out.println("Who do you want to search for?");
-						scanner.nextLine();
 						search = scanner.nextLine();
 						ab.searchPerson(search);
 						break;
 					case 3:
 						System.out.println("Who do you want to delete?");
-						scanner.nextLine();
 						search = scanner.nextLine();
 						ab.deletePerson(search);
 						break;
