@@ -9,6 +9,6 @@ Everytime you start the program the contacts saved in the .txt file will be load
 To run the programs you need JDK 11.0 installed.
 Navigate to where you downloaded the folder "AddressBook".
 open cmd or powershell.
-Type: Javac App.java
-Type: Java App
+Type: Javac App.java and press enter.
+Type: Java App and press enter.
 The Addressbook should now start.
