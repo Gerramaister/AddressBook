@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,6 +14,7 @@ public class AddressBook {
 	public AddressBook() {
 		scanner = new Scanner(System.in);
 		persons = new ArrayList<PersonInfo>();
+		loadPersons();
 	}
 	
 	public void addPerson() {
@@ -67,7 +70,8 @@ public class AddressBook {
 			PrintWriter pw = new PrintWriter(fw);
 			for(int i = 0; i < persons.size(); i++) {
 				p = (PersonInfo) persons.get(i);
-				line = p.getName() + "," + p.getAddress() + p.getPhoneNumber();
+				line = p.getName() + ", " + p.getAddress() + ", " + p.getPhoneNumber();
+				
 				//Write line to SaveContacts.txt
 				pw.println(line);
 			}
@@ -78,6 +82,29 @@ public class AddressBook {
 			System.out.println(ioEx);
 		}
 		
+	}
+	//load contacts saved in "SaveContacts.txt"
+	public void loadPersons() {
+		String tokens[] = null;
+		String name, add, pn;
+		try {
+			FileReader fr = new FileReader("SaveContacts.txt");
+			BufferedReader br = new BufferedReader(fr);
+			String line = br.readLine();
+			while(line != null) {
+				tokens = line.split(",");
+				name = tokens[0];
+				add = tokens[1];
+				pn = tokens[2];
+				PersonInfo p = new PersonInfo(name, add, pn);
+				persons.add(p);
+				line = br.readLine();
+			}
+			br.close();
+			fr.close();
+		}catch(IOException ioEx) {
+			System.out.println(ioEx);
+		}
 	}
 	
 	
