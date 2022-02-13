@@ -1,2 +1,3 @@
-oskar, gatan12, 112
-oskipls, gatan 11, 113
+oskipls,  gatan 11,  113
+Oskar Johansson,  Västra Andersgårdsgatan 13c,  0707252565
+Kalle Anka, Ankeborg 54, 112
