@@ -40,10 +40,11 @@ public class AddressBook {
 			
 			if(name.equals(person.getName())) {
 				System.out.println(person.getName() +" " + person.getAddress()+ " " + person.getPhoneNumber());
-				
+				break;
 			}
 			else {
 				System.out.println("There is no person with that name");
+				
 			}
 		}	
 	}
@@ -83,7 +84,7 @@ public class AddressBook {
 		}
 		
 	}
-	//load contacts saved in "SaveContacts.txt"
+	//load contacts to program saved in "SaveContacts.txt"
 	public void loadPersons() {
 		String tokens[] = null;
 		String name, add, pn;
