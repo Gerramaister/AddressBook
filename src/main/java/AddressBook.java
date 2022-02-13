@@ -40,10 +40,11 @@ public class AddressBook {
 			
 			if(name.equals(person.getName())) {
 				System.out.println(person.getName() +" " + person.getAddress()+ " " + person.getPhoneNumber());
-				
+				break;
 			}
 			else {
 				System.out.println("There is no person with that name");
+				
 			}
 		}	
 	}
