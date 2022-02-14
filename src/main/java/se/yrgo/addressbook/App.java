@@ -14,7 +14,7 @@ package se.yrgo.addressbook;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class App2 {
+public class App {
 
 	public static void main(String[] args) {
 		AddressBook ab = new AddressBook();
