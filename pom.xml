@@ -39,7 +39,7 @@
 					<archive>
 						<manifest>
 							<mainClass>
-								App
+								se.yrgo.addressbook.App
 							</mainClass>
 						</manifest>
 					</archive>
