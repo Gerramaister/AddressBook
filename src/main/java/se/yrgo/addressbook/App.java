@@ -1,3 +1,15 @@
+/**
+ * This is an address book program that takes name, address and phone number as input.
+ * You can then save the information into an text file or load the contacts from the text file into the ArrayList.
+ * We have split the program into a main class and an address book class.
+ * In this main class we use a switch that receives the input choice from the user.
+ * Then each case call a function in the AddressBook class.
+ * 
+ * Known issues:
+ * When you enter a invalid choice the program cas an exception and exit.
+ * If you delete all contacts inside the ArrayList in the AddressBook class we get a error.
+ */
+
 package se.yrgo.addressbook;
 import java.util.InputMismatchException;
 import java.util.Scanner;
